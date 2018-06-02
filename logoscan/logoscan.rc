@@ -1,0 +1,166 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+RESULT_DLG DIALOGEX 10, 10, 158, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Analytical Results"
+FONT 9, "Meiryo UI", 400, 0, 0x0
+BEGIN
+    LTEXT           "Logo Name",IDC_TEXT,8,10,20,9
+    EDITTEXT        IDC_EDIT,34,8,115,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Send",IDC_SEND,115,30,35,14,BS_CENTER | BS_VCENTER
+    PUSHBUTTON      "Save",IDC_SAVE,115,50,35,14,BS_CENTER | BS_VCENTER
+    PUSHBUTTON      "Close",IDC_CLOSE,115,70,35,14,BS_CENTER | BS_VCENTER
+    GROUPBOX        "Background color",IDC_GROUP,8,90,142,25
+    LTEXT           "R",IDC_TEXT_R,16,101,8,8
+    EDITTEXT        IDC_RED,24,99,30,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINR,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,0,0,0,0
+    LTEXT           "G",IDC_TEXT_G,61,101,8,8
+    EDITTEXT        IDC_GREEN,69,99,30,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPING,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,0,0,0,0
+    LTEXT           "B",IDC_TEXT_B,106,101,8,8
+    EDITTEXT        IDC_BLUE,114,99,30,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPINB,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,0,0,0,0
+    GROUPBOX        "",IDC_PANEL,8,25,100,60
+END
+
+ABORT_DLG DIALOGEX 20, 20, 150, 83
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Logo Analysing..."
+FONT 9, "Meiryo UI", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Abort",IDC_ABORT,50,63,50,14,BS_CENTER | BS_VCENTER
+    LTEXT           "Frames scanning...",IDC_TEXT,10,7,120,10,SS_ENDELLIPSIS
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,8,20,133,12
+    RTEXT           "0",IDC_EXAMF,90,35,20,10
+    CTEXT           "/",IDC_STATIC,115,35,4,10
+    RTEXT           "0",IDC_ALLF,119,35,20,10
+    RTEXT           "Effective sample:",IDC_STATIC,70,48,45,10
+    RTEXT           "0",IDC_USEABLE,119,48,20,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VIRSION_INFO VERSIONINFO
+ FILEVERSION 0,0,7,0
+ PRODUCTVERSION 0,0,7,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "FileDescription", "Logo Analysis Plugin for AviUtl 0.98d (Translated by ema)"
+            VALUE "FileVersion", "0.07"
+            VALUE "InternalName", "LogoScan"
+            VALUE "LegalCopyright", "(C) MakKi"
+            VALUE "OriginalFilename", "logoscan.aup"
+            VALUE "ProductName", "Logo Analysis Plugin"
+            VALUE "ProductVersion", "0.07"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    "RESULT_DLG", DIALOG
+    BEGIN
+    END
+
+    "ABORT_DLG", DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+ABORT_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+RESULT_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
